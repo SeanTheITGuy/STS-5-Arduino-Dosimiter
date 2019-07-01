@@ -3,7 +3,8 @@
      Date: 2019-04-24
      --
      Simple sketch to count hits from a STS05 GM tube, average over a short period, and report the current
-     radiation dosage amounts to the OLED display.
+     radiation dosage amounts to the LCD display.  If the battery charge board is hooked to power, the device will
+     turn off the LCD backlight, mute audio, extend sample period to 5 minutes, and upload data to thingspeak.
 */
 
 #include <SPI.h>               // include SPI library
